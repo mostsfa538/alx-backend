@@ -15,7 +15,7 @@ class FIFOCache(BaseCaching):
         if len(self.cache_data.keys()) > super().MAX_ITEMS:
             remove = list(self.cache_data.keys())[0]
             print(f'DISCARD: {remove}')
-            del self.cache_data[key]
+            del self.cache_data[remove]
 
     def get(self, key):
         """ return the value in self.cache_data linked to key """
