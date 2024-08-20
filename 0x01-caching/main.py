@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-""" 1-main """
-FIFOCache = __import__('1-fifo_cache').FIFOCache
+""" 2-main """
+LIFOCache = __import__('2-lifo_cache').LIFOCache
 
-my_cache = FIFOCache()
+my_cache = LIFOCache()
 my_cache.put("A", "Hello")
 my_cache.put("B", "World")
 my_cache.put("C", "Holberton")
@@ -13,4 +13,6 @@ my_cache.print_cache()
 my_cache.put("C", "Street")
 my_cache.print_cache()
 my_cache.put("F", "Mission")
+my_cache.print_cache()
+my_cache.put("G", "San Francisco")
 my_cache.print_cache()
