@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> {{ _("home_title") }} </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1> {{ _("home_header") }} </h1>
+        <p> {% if user %}
+                {{ _("logged_in_as", username=user.name) }}
+            {% else %}
+                {{ _('not_logged_in') }}
+            {% endif %}
+        </p>
+        <p> {{ timezone }} </p>
+    </body>
+</html>
